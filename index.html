@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akash's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+  </header>
+
+  <!-- Profile -->
+  <div class="profile">
+    <img id="profileImage" src="src/profile.jpg" alt="Profile Photo" />
+    <h2>Akash</h2>
+    <p class="intro">👋 Hi I am Akash</p> <!-- 👈 Added this line -->
+    <p class="typing" id="typingText"></p>
+    <br>
+    <button id="editPhotoBtn">Edit Profile Photo</button>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a <b>BCA Student</b>.
+      Passionate about technology, web development, and also a karate player.
+      I love exploring new skills and working on exciting projects.</p>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <input type="text" id="pythonCert" placeholder="Python Certificate link"><br>
+    <input type="text" id="webCert" placeholder="Web Development Certificate link"><br>
+    <input type="text" id="karateCert" placeholder="Karate Achievement link"><br>
+    <button onclick="saveCertificates()">Save Certificates</button>
+    <button onclick="openModal()">View Certificates</button>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-links">
+      <p>📧 Email:
+        <a href="mailto:akashadhithyan11707@gmail.com">
+          akashadhithyan11707@gmail.com
+        </a>
+      </p>
+      <p>💬 WhatsApp:
+        <a href="https://wa.me/916381706363">
+          +91 63817 06363
+        </a>
+      </p>
+      <p>🐙 GitHub:
+        <a href="https://github.com/akashadhithyan11707-web/Akash-TNSDC-FWD-DP" target="_blank">
+          github.com/yourgithub
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal">
+    <div id="modal-content">
+      <h3>My Certificates</h3>
+      <a id="link1" href="#" target="_blank">Python Certificate</a>
+      <a id="link2" href="#" target="_blank">Web Development Certific_
